@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "YouthAndBeauty";
+  src: url("./youth-and-beauty.ttf") format("truetype"),
+    url("./youth-and-beauty.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fde73c;
+}
+
+.container {
+  width: 100%;
+  margin: 2rem;
+}
+
+.main {
+  background-color: rgba(255, 255, 255, 0.85);
+  background-image: url(./imgs/sunflowers.png);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 4rem);
+  box-shadow: 1px 1px 6px rgba(0.2, 0.2, 0.2, 0.2);
+  background-blend-mode: hue;
+}
+
+.header {
+  font-family: YouthAndBeauty, cursive, serif;
+  font-size: 4rem;
+  color: #428c27;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  text-shadow: 1px 1px 3px rgba(100, 100, 100, .4);
+}
+
+.date {
+  font-size: 1.5rem;
+  color: #415d36;
+  margin-top: 0;
+  font-family: sans-serif;
+}
