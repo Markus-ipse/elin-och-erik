@@ -16,10 +16,8 @@ body {
 }
 
 .main {
-  background-color: rgba(255, 255, 255, 0.85);
-  background-image: url(./imgs/sunflowers.png);
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-color: rgba(255, 254, 244, 0.9);
+
   height: calc(100vh - 4rem);
   display: flex;
   flex-direction: column;
@@ -27,7 +25,19 @@ body {
   align-items: center;
   width: calc(100% - 4rem);
   box-shadow: 1px 1px 6px rgba(0.2, 0.2, 0.2, 0.2);
-  background-blend-mode: hue;
+  /* background-blend-mode: hue; */
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(./imgs/sunflowers.png);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  z-index: -1;
 }
 
 .header {
@@ -39,9 +49,14 @@ body {
   text-shadow: 1px 1px 3px rgba(100, 100, 100, 0.4);
 }
 
+.and {
+  color: #f1cc37;
+  font-size: 1.3em;
+}
+
 .date {
   font-size: 1.5rem;
   color: #415d36;
   margin-top: 0;
-  font-family: sans-serif;
+  font-family: courier;
 }
