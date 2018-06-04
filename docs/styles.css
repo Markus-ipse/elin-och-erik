@@ -40,8 +40,20 @@ body {
   width: 100%;
   background-image: url(./imgs/sunflowers.png);
   background-repeat: no-repeat;
-  background-position: 0% 100%;
+  background-position: 50% 100%;
   z-index: -1;
+}
+
+.card:first-child::before {
+  background-position: 0 100%;
+}
+
+.card:nth-child(3)::before {
+  background-position: 100% 100%;
+}
+
+.card:last-child::before {
+  background-image: none;
 }
 
 .title {
