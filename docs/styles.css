@@ -1,35 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
 @font-face {
   font-family: "YouthAndBeauty";
   src: url("./fonts/youth-and-beauty.ttf") format("truetype"),
     url("./fonts/youth-and-beauty.otf") format("opentype");
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #fde73c;
+  font-family: "Abel", sans-serif;
+  font-size: 2rem;
 }
 
 .container {
   width: 100%;
-  margin: 2rem;
 }
 
-.main {
+.card {
   background-color: rgba(255, 254, 244, 0.9);
-
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(100% - 4rem);
   box-shadow: 1px 1px 6px rgba(0.2, 0.2, 0.2, 0.2);
-  /* background-blend-mode: hue; */
   position: relative;
+  margin: 1rem;
 }
 
-.main::before {
+.card::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -40,8 +44,8 @@ body {
   z-index: -1;
 }
 
-.header {
-  font-family: YouthAndBeauty, cursive, serif;
+.title {
+  font-family: "YouthAndBeauty", cursive, serif;
   font-size: 4rem;
   color: #428c27;
   margin-bottom: 0.5rem;
@@ -49,14 +53,70 @@ body {
   text-shadow: 1px 1px 3px rgba(100, 100, 100, 0.4);
 }
 
+section .title {
+  font-size: 3rem;
+}
+
 .and {
-  color: #f1cc37;
+  color: #fac500;
   font-size: 1.3em;
 }
 
 .date {
   font-size: 1.5rem;
-  color: #415d36;
+  color: #213f24;
   margin-top: 0;
-  font-family: courier;
+}
+
+nav a {
+  text-decoration: none;
+  color: #213f24;
+  font-family: "YouthAndBeauty", cursive, serif;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+nav a:hover {
+  color: #fac500;
+}
+
+section {
+  padding: 3rem;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 750px;
+}
+
+.toasters {
+  display: flex;
+}
+
+.left-toast,
+.right-toast {
+  flex: 1;
+  flex-basis: 50%;
+  width: 50%;
+}
+
+.left-toast {
+  text-align: right;
+  padding-right: 1rem;
+  border-right: 3px solid gray;
+  height: 300px;
+}
+
+.right-toast {
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.estate-img {
+  max-height: 30vh;
+}
+
+.to-top {
+  font-size: 0.8rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
 }
