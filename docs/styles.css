@@ -50,6 +50,34 @@ body {
   }
 }
 
+.more {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  z-index: 10;
+  width: 1rem;
+  height: 1rem;
+  bottom: 1rem;
+  transform: rotate(45deg);
+  border: solid #fac500;
+  border-width: 0px 1px 1px 0px;
+}
+
+.more::before {
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 10;
+  width: 1rem;
+  height: 1rem;
+  bottom: 1rem;
+  border: solid #fac500;
+  border-width: 0px 1px 1px 0px;
+  left: -5px;
+  top: -6px;
+}
+
 .card::before {
   content: "";
   position: absolute;
@@ -184,6 +212,10 @@ section {
   font-weight: bold;
   /* float: left; */
   /* margin-right: .5em; */
-  padding-right: .5rem;
-  padding-top: .5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.tag {
+  font-weight: bold;
 }
